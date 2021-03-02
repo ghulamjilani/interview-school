@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Section:</strong>
+  <%= @section_student.classroom_name %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @section_student.teacher_full_name %>
+</p>
+
+<p>
+  <strong>Days:</strong>
+  <%= @section_student.section_days_group %>
+</p>
+
+<p>
+  <strong>Time Slot:</strong>
+  <%= time_slot @section_student.section %>
+</p>
+
+
+<%= link_to 'Edit', edit_schedule_path(@section_student) %> |
+<%= link_to 'Back', schedules_path %>

@@ -1,0 +1,7 @@
+section_student_one:
+  student: student_one
+  section: section_one
+
+section_student_two:
+  student: student_two
+  section: section_two

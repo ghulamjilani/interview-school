@@ -14,7 +14,7 @@
 <%= link_to 'Back', teachers_path %>
 
 <p>
-  <strong>Classes</strong>
+  <strong>Subjects</strong>
   <ul>
     <% @teacher.teacher_subjects.each do |teacher_subject| %>
       <%= render 'teacher_subjects/show', teacher_subject: teacher_subject %>

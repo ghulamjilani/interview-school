@@ -12,11 +12,11 @@ class SubjectsTest < ApplicationSystemTestCase
 
   test 'creating a Class' do
     visit subjects_url
-    click_on 'New Class'
+    click_on 'New Subject'
 
     fill_in 'Description', with: @subject.description
     fill_in 'Name', with: @subject.name
-    click_on 'Create Class'
+    click_on 'Create Subject'
 
     assert_text 'Class was successfully created'
     click_on 'Back'
@@ -28,7 +28,7 @@ class SubjectsTest < ApplicationSystemTestCase
 
     fill_in 'Description', with: @subject.description
     fill_in 'Name', with: @subject.name
-    click_on 'Update Class'
+    click_on 'Update Subject'
 
     assert_text 'Class was successfully updated'
     click_on 'Back'

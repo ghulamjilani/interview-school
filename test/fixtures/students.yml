@@ -1,0 +1,9 @@
+student_one:
+  first_name: Jhon
+  last_name: Carter
+  ip_address: '192.168.1.1'
+
+student_two:
+  first_name: Sara
+  last_name: Carter
+  ip_address: '192.168.1.2'

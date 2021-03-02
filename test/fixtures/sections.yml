@@ -1,0 +1,20 @@
+section_one:
+  teacher: math_teacher
+  classroom: classroom_one
+  start_time: '7:30 AM'
+  time_limit: 'regular'
+  days: 'everyday'
+
+section_two:
+  teacher: english_teacher
+  classroom: classroom_two
+  start_time: '10:30 AM'
+  time_limit: 'extended'
+  days: 'tt'
+
+section_three:
+  teacher: math_and_english_teacher
+  classroom: classroom_one
+  start_time: '11:00 AM'
+  time_limit: 'extended'
+  days: 'tt'

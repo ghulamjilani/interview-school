@@ -1,0 +1,23 @@
+<% path, method =  section_student.persisted? ? ["/schedules/#{section_student.id}", :put] : [schedules_path(section_student), :post]%>
+
+<%= form_with(url: path, local: true, method: method) do |form| %>
+  <% if section_student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(section_student.errors.count, "error") %> prohibited this section from being saved:</h2>
+
+      <ul>
+        <% section_student.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class='field'>
+    <%= form.select :section_id, options_from_collection_for_select(Section.all, :id, -> (section) {"#{section.classroom_name} (#{time_slot(section)})"}, @section_student.section_id), {} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

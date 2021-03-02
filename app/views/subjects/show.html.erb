@@ -14,7 +14,7 @@
   <strong>Teachers</strong>
   <ul>
     <% @subject.teacher_subjects.each do |teacher_subject| %>
-      <li><%= link_to teacher_subject.teacher.first_and_last_name, teacher_path(teacher_subject.teacher) %></li>
+      <li><%= link_to teacher_subject.teacher.full_name, teacher_path(teacher_subject.teacher) %></li>
     <% end %>
   </ul>
 </p>

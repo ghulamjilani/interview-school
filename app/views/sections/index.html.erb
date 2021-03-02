@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sections</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Teacher</th>
+    <th>Classroom</th>
+    <th>Time Slot</th>
+    <th>Days</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @sections.each do |section| %>
+    <tr>
+      <td><%= section.teacher_full_name %></td>
+      <td><%= section.classroom_name %></td>
+      <td><%= time_slot(section) %></td>
+      <td><%= section.days_group %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Section', new_section_path %>
